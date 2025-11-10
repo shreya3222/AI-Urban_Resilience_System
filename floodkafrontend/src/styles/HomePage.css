@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Orbitron", serif;        
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Section 1: Hero Section */
+.home-page {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.26);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.navbar ul li a {
+    font-family: "Orbitron", serif; 
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #00ffff;
+}
+
+/* Hero Text */
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    background: rgba(0, 0, 0, 0.281);
+    padding: 30px 50px;
+    border-radius: 10px;
+    animation: slideIn 2s ease-out;
+}
+
+.hero-text h5 {
+    font-size: 1.5rem;
+    animation: slideIn 2s ease-out 0.5s;
+}
+
+/* Features Section */
+.features-section {
+    padding: 50px;
+    background: #0d1b2a;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    color: #00ffff;
+    margin-bottom: 20px;
+}
+
+.features-section ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.features-section ul li {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+/* About Section */
+.about-section {
+    background: #0d1b2a;
+    font-family: "Roboto", serif;
+    padding: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    color: #cbdfdf;
+    text-align: center;
+}
+
+/* Options Section */
+.options-section {
+    background: #0d1b2a;
+    padding: 50px;
+    color: #00ffff;
+    text-align: center;
+}
+
+.options-section h2 {
+  font-size: 2.5rem;
+  color: #00ffff;
+  margin-bottom: 20px;
+}
+.options-section h3 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+/* Models Section */
+.option-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0d1b2a;
+    padding: 100px;
+}
+
+.models {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #15bdbd;
+    color: #1a1a2e;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    margin: 20px;
+}
+
+.models:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact-section {
+    background: #058084;
+    padding: 50px;
+    color: white;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.contact-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus {
+    border: 2px solid #00ffff;
+}
+
+.contact-form button {
+    padding: 10px;
+    background: #0d1b2a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #00ffff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Initial state for text elements that should animate on scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Final state after scrolling into view */
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+

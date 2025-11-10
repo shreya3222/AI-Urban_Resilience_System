@@ -1,0 +1,41 @@
+.uhi-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 10px #ccc;
+  }
+  
+  .uhi-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .uhi-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  #heatmap {
+    height: 500px;
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+  
